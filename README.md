@@ -1,3 +1,4 @@
+
 # Cross-Market Gold Options Volatility Arbitrage
 
 This repository explores a **straddle-based volatility arbitrage strategy** between COMEX and SHFE gold options.  
@@ -18,10 +19,7 @@ It contains two versions:
 ## ⚙️ Baseline Strategy (Original)
 
 **Logic**  
-- Compute ATM IV spread:  
-  \[
-  y_t = IV_{SHFE,t} - IV_{COMEX,t}
-  \]
+- Compute ATM IV spread:  \( y_t = IV_{SHFE,t} - IV_{COMEX,t} \)  
 - Use historical mean μ and std σ.  
 - **Entry**: open trades when spread > μ + 2σ or < μ – 2σ.  
 - **Exit**: close when spread reverts toward μ or after 10 days.  
@@ -70,4 +68,32 @@ It contains two versions:
 | PnL Stability     | Poor           | Robust, smoother     |
 | Costs Included    | No             | Yes (slippage, FX)   |
 
+![IV Spread with Kalman Filter](results/iv_spread_kalman_bands.png)  
+![Baseline vs Enhanced Equity Curves](results/equity_comparison.png)  
 
+---
+
+## 📂 Repository Structure
+```
+CrossMarket_Gold_VolArb/
+│
+├── README.md
+├── data/                       # Synthetic sample data
+├── notebooks/
+│   ├── baseline_backtest.ipynb # Original version
+│   └── kalman_backtest.ipynb   # Improved version
+├── src/
+│   ├── __init__.py
+│   ├── baseline_strategy.py
+│   ├── kalman_filter.py
+│   ├── enhanced_strategy.py
+│   └── backtest_engine.py
+├── results/                    # Figures
+└── requirements.txt
+```
+
+---
+
+## ⚠️ Disclaimer
+This project uses **synthetic or transformed data** for demonstration.  
+It is for **educational and interview purposes only**, not for live trading.
