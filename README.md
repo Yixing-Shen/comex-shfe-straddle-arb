@@ -71,11 +71,3 @@ It contains two versions:
 ![IV Spread with Kalman Filter](results/iv_spread_kalman_bands.png)  
 ![Baseline vs Enhanced Equity Curves](results/equity_comparison.png)  
 
-
-```
-
----
-
-## ⚠️ Disclaimer
-This project uses **synthetic or transformed data** for demonstration.  
-It is for **educational and interview purposes only**, not for live trading.
