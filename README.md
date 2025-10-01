@@ -51,7 +51,7 @@ It contains two versions:
    - Delta hedge with tolerance bands (rebalance only if |Δ| > 0.15).  
 
 **Results (Backtest 2020–2023)**  
-- **Annualized return: ~12–15%**  
+- **Annualized return: ~13%**  
 - **Sharpe ratio: >1.2**  
 - **Max drawdown: <15%**  
 - Equity curve is smoother, tail risk is significantly reduced.  
@@ -64,8 +64,10 @@ It contains two versions:
 
 | Metric            | Baseline (Raw) | Enhanced (KF + Risk) |
 |-------------------|----------------|----------------------|
-| Annualized Return | ~35%           | ~12–15%              |
+| Annualized Return | ~35%           | ~13%                 |
 | Max Drawdown      | –24%           | <15%                 |
 | Sharpe Ratio      | <1.0           | >1.2                 |
 | PnL Stability     | Poor           | Robust, smoother     |
 | Costs Included    | No             | Yes (slippage, FX)   |
+
+
