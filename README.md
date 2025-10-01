@@ -94,6 +94,3 @@ CrossMarket_Gold_VolArb/
 
 ---
 
-## ⚠️ Disclaimer
-This project uses **synthetic or transformed data** for demonstration.  
-It is for **educational and interview purposes only**, not for live trading.
